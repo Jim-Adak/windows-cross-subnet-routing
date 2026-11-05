@@ -4,6 +4,12 @@
 > 关键词：Windows Server、静态路由、CIDR、最长前缀匹配、默认网关、PowerShell  
 > 结果：**已解决**
 
+## 相关配置教程与原理分析
+
+- [RRAS 配置 /17 路由：覆盖范围、操作步骤与 CIDR 二进制计算](docs/rras-route-17-and-cidr.md) — 新增；包含 `172.16.128.0/17`、`255.255.128.0` 与按位 AND 的详细解释。**该 /17 方案尚未在原网络实测。**
+- [Windows Server 静态路由：RRAS 图形界面与 PowerShell](docs/gui-vs-cli-static-route.md) — 单网段 `/24` 路由配置。
+- [静态路由、动态路由与子网规划比较](docs/static-vs-dynamic-routing.md) — OSPF 和最长前缀匹配的分析。
+
 ## 1. 故障现象
 
 校园网中的 Windows 11 客户端无法按预期访问 Windows Server：
